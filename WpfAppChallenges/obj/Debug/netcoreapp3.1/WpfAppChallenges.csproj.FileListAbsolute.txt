@@ -1,0 +1,17 @@
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\bin\Debug\netcoreapp3.1\WpfAppChallenges.exe
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\bin\Debug\netcoreapp3.1\WpfAppChallenges.deps.json
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\bin\Debug\netcoreapp3.1\WpfAppChallenges.runtimeconfig.json
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\bin\Debug\netcoreapp3.1\WpfAppChallenges.runtimeconfig.dev.json
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\bin\Debug\netcoreapp3.1\WpfAppChallenges.dll
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\bin\Debug\netcoreapp3.1\WpfAppChallenges.pdb
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges.csprojAssemblyReference.cache
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges_MarkupCompile.cache
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges_MarkupCompile.lref
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges.g.resources
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges.AssemblyInfoInputs.cache
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges.AssemblyInfo.cs
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges.dll
+C:\Users\Gagan Virk\Documents\GitHub\WpfAppChallenges\WpfAppChallenges\obj\Debug\netcoreapp3.1\WpfAppChallenges.pdb
