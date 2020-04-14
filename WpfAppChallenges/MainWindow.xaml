@@ -5,9 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppChallenges"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="300">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="400,193,0,0" VerticalAlignment="Top" Height="51" Width="96"/>
-
+        <Button Content="Button" Name="button1" HorizontalAlignment="Left" Margin="55,44,0,0" VerticalAlignment="Top" Height="23" Width="75">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName="button1"
+                                Storyboard.TargetProperty="Height"
+                                To="200" Duration="0:0:5"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever"/>
+                            <DoubleAnimation 
+                                Storyboard.TargetName="button1"
+                                Storyboard.TargetProperty="Width"
+                                To="300" Duration="0:0:5"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
     </Grid>
 </Window>
