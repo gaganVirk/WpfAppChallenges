@@ -5,29 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppChallenges"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="300">
+        Title="MainWindow" Height="300" Width="500">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click"
+                      SourceName="btnClockwise">
+            <BeginStoryboard x:Name="rotateClockwise">
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="rectRotate"
+                                     Storyboard.TargetProperty="Angle"
+                                     From="0.0" To="360.0" Duration="0:0:10"
+                                     RepeatBehavior="Forever"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" 
+                      SourceName="btnCounterclockwise">
+            <BeginStoryboard x:Name="rotateCounterclockwise">
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="rectRotate"
+                                     Storyboard.TargetProperty="Angle"
+                                     From="360.0" To="0.0" Duration="0:0:10"
+                                     RepeatBehavior="Forever"/>
+                </Storyboard> 
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="btnStop">
+            <PauseStoryboard BeginStoryboardName="rotateClockwise"/>
+            <PauseStoryboard BeginStoryboardName="rotateCounterclockwise"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
-        <Button Content="Button" Name="button1" HorizontalAlignment="Left" Margin="55,44,0,0" VerticalAlignment="Top" Height="23" Width="75">
-            <Button.Triggers>
-                <EventTrigger RoutedEvent="Button.Loaded">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <DoubleAnimation
-                                Storyboard.TargetName="button1"
-                                Storyboard.TargetProperty="Height"
-                                To="200" Duration="0:0:5"
-                                AutoReverse="True"
-                                RepeatBehavior="Forever"/>
-                            <DoubleAnimation 
-                                Storyboard.TargetName="button1"
-                                Storyboard.TargetProperty="Width"
-                                To="300" Duration="0:0:5"
-                                AutoReverse="True"
-                                RepeatBehavior="Forever"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Button.Triggers>
-        </Button>
+
+        <Rectangle x:Name="myRectangle" HorizontalAlignment="Left" Height="100" Margin="122,57,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5" Fill="Cyan">
+            <Rectangle.RenderTransform>
+                <RotateTransform x:Name="rectRotate" Angle="0.0"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="btnClockwise" Content="Clockwise" HorizontalAlignment="Left" Margin="134,192,0,0" VerticalAlignment="Top" Height="42" Width="56" RenderTransformOrigin="1.973,0.111"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="294,192,0,0" VerticalAlignment="Top" Height="42" Width="56" RenderTransformOrigin="1.973,0.111"/>
+        <Button x:Name="btnCounterclockwise" Content="Counterclockwise" HorizontalAlignment="Left" Margin="209,192,0,0" VerticalAlignment="Top" Height="42" Width="56" RenderTransformOrigin="1.973,0.111"/>
     </Grid>
 </Window>
